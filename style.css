@@ -1,0 +1,51 @@
+.game {
+    width: 600px;
+    height: 200px;
+    border-bottom: 1px solid #000;
+    margin: auto;
+}
+#ball{
+    width: 32px;
+    height: 32px;
+    background-image: url(img/ball.png);
+    background-size: 32px 32px;
+    position: relative;
+    top: 170px;
+}
+#cactus{
+    width: 32px;
+    height: 32px;
+    background-image: url(img/cactus.png);
+    position: relative;
+    top: 140px;
+    left: 580px;
+    animation: cactusMov 1s infinite linear;
+}
+@keyframes cactusMov {
+    0%{
+        left: 580px;
+    }
+    100%{
+        left: -20px;
+    }
+}
+.jump{
+    animation: jump 0.5s linear;
+}
+@keyframes jump {
+    0%{
+        top: 170px;
+    }
+    25%{
+        top: 150px;
+    }
+    50%{
+        top: 135px;
+    }
+    75%{
+        top: 150px;
+    }
+    100%{
+        top: 170px;
+    }
+}
